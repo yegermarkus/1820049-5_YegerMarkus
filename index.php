@@ -27,19 +27,23 @@
                             <a class="nav-link" href="#">Home <span class="sr-only">(Página atual)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Quem Somos</a>
+                            <a class="nav-link" href="pages/quemsomos.php">Quem Somos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contato</a>
+                            <a class="nav-link" href="pages/contato.php">Contato</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Localização</a>
+                            <a class="nav-link" href="pages/contato.php">Localização</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
+    <main></main>
+
+    <footer></footer>
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
