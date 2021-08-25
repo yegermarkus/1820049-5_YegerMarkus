@@ -48,7 +48,9 @@
             <div class="row justify-content-center align-items-center">
                 <div class="col">
 
-                    <h2>Contato</h2>
+                    <header>
+                        <h2>Contato</h2>
+                    </header>
 
                     <form action="function/validateForm.php" method="POST">
                         <div class="form-group">
