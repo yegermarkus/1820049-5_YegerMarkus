@@ -12,7 +12,7 @@
     <!-- CCS custom -->
     <link rel="stylesheet" href="css/custom.css">
 
-    <title>Contato e Localização</title>
+    <title>Contato</title>
 </head>
 
 <body>
@@ -43,7 +43,30 @@
         </nav>
     </header>
 
-    <main></main>
+    <main>
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col">
+
+                    <h2>Contato</h2>
+
+                    <form action="function/validateForm.php" method="POST">
+                        <div class="form-group">
+                            <label for="inputPassword">Nome</label>
+                            <input type="text" class="form-control" id="inputPassword" placeholder="Senha">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail">Endereço de email</label>
+                            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Seu email">
+                            <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </main>
 
     <footer></footer>
 
