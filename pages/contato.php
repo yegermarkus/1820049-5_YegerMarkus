@@ -52,13 +52,13 @@
                         <h2>Contato</h2>
                     </header>
 
-                    <form action="function/validateForm.php" method="POST">
+                    <form action="/function/validateForm.php" method="POST">
                         <div class="form-group">
-                            <label for="inputPassword">Nome</label>
-                            <input type="text" class="form-control" id="inputPassword" placeholder="Senha">
+                            <label for="inputName" name="name">Nome</label>
+                            <input type="text" class="form-control" id="inputName" placeholder="Seu nome">
                         </div>
                         <div class="form-group">
-                            <label for="inputEmail">Endereço de email</label>
+                            <label for="inputEmail" name="email">Endereço de email</label>
                             <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Seu email">
                             <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
                         </div>
