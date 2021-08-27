@@ -1,7 +1,12 @@
 <div class="container">
-    <div class="row">
+    <div class="row text-center pt-5 pb-3">
         <div class="col">
             <h1>Contato</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
             <form>
                 <div class="form-group">
                     <label for="inputNome">Nome</label>

@@ -20,7 +20,7 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col">
-                    <img src="images/logo-site.png" alt="">
+                    <a href="index.php"><img src="images/logo-site.png" alt=""></a>
                 </div>
             </div>
         </div>
@@ -53,6 +53,7 @@
     <main>
 
         <?php
+        /*
         $pag = $_GET["page"];
 
         if ($pag == "pages/home.php") {
@@ -70,6 +71,13 @@
         if ($pag == 'pages/localizacao.php') {
             require_once 'pages/localizacao.php';
         }
+        */
+
+        if(isset($_GET["page"]) && !empty($_GET["page"])){
+            $pag = $_GET["page"];
+            include ($pag);
+        }
+
 
         ?>
 
