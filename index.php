@@ -17,23 +17,23 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="#">Doces Doçura</a>
+                <a class="navbar-brand" href="index.php">Doces Doçura</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(Página atual)</span></a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.php?page=pages/home.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/quemsomos.php">Quem Somos</a>
+                            <a class="nav-link" href="index.php?page=pages/quemsomos.php">Quem Somos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/contato.php">Contato</a>
+                            <a class="nav-link" href="index.php?page=pages/contato.php">Contato</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/contato.php">Localização</a>
+                            <a class="nav-link" href="index.php?page=pages/localizacao.php">Localização</a>
                         </li>
                     </ul>
                 </div>
@@ -41,7 +41,29 @@
         </nav>
     </header>
 
-    <main></main>
+    <main>
+
+        <?php
+        $p = $_GET['page'];
+
+        if ($p == 'pages/home.php') {
+            require_once 'pages/home.php';
+        }
+
+        if ($p == 'pages/quemsomos.php') {
+            require_once 'pages/quemsomos.php';
+        }
+
+        if ($p == 'pages/contato.php') {
+            require_once 'pages/contato.php';
+        }
+
+        if ($p == 'pages/localizacao.php') {
+            require_once 'pages/localizacao.php';
+        }
+        ?>
+
+    </main>
 
     <footer></footer>
 
