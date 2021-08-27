@@ -25,7 +25,7 @@
             </div>
         </div>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
                     <span class="navbar-toggler-icon"></span>
@@ -53,32 +53,10 @@
     <main>
 
         <?php
-        /*
-        $pag = $_GET["page"];
-
-        if ($pag == "pages/home.php") {
-            require_once "pages/home.php";
-        }
-
-        if ($pag == "pages/quemsomos.php") {
-            require_once 'pages/quemsomos.php';
-        }
-
-        if ($pag == 'pages/contato.php') {
-            require_once 'pages/contato.php';
-        }
-
-        if ($pag == 'pages/localizacao.php') {
-            require_once 'pages/localizacao.php';
-        }
-        */
-
-        if(isset($_GET["page"]) && !empty($_GET["page"])){
+        if (isset($_GET["page"]) && !empty($_GET["page"])) {
             $pag = $_GET["page"];
-            include ($pag);
+            include($pag);
         }
-
-
         ?>
 
     </main>
