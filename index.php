@@ -15,7 +15,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
                 <a class="navbar-brand" href="index.php">Doces Doçura</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
@@ -54,13 +54,6 @@
             require_once 'pages/quemsomos.php';
         }
 
-        if ($p == 'pages/contato.php') {
-            require_once 'pages/contato.php';
-        }
-
-        if ($p == 'pages/localizacao.php') {
-            require_once 'pages/localizacao.php';
-        }
         ?>
 
     </main>
